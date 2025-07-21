@@ -12,6 +12,17 @@
 .bgcolor{
     background-color: rgba(255, 144, 14, 0.1);
 }
+.greycolor{
+    color: #727272;
+}
+.blackcolor{
+    color: #131313;
+}
+.orangecolor{
+    color: #FF900E;
+}
+
+/* header style */
 
 /* navbar style */
 .navbar{
@@ -37,6 +48,7 @@ nav ul li a{
 }
 nav ul li{
     list-style: none;
+    font-size: 1rem;
 }
 
 /* banner style */
@@ -70,9 +82,39 @@ nav ul li{
     margin: 50px 0;
 }
 .banner-img-container{
-    width: 1140px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 .banner-image{
     width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar{
+        flex-direction: column;
+    }
+}
+
+/* main style */
+
+/* team style */
+.team-container{
+    display: flex;
+    max-width: 1040px;
+    margin: 100px auto;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.team-info{
+    align-content: center;
+    margin-left: 30px;
+}
+.team-title{
+    font-size: 2rem;
+}
+.team-description{
+    font-size: 1rem;
+    color: #727272;
 }
