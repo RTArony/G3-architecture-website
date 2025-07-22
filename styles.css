@@ -13,7 +13,7 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 .greycolor{
-    color: #727272;
+    color: #727272; 
 }
 .blackcolor{
     color: #131313;
@@ -134,5 +134,68 @@ nav ul li{
 @media screen and (min-width:576px) and (max-width:990px) {
     .team-container{
         flex-direction: column;
+    }
+}
+
+/* feature style */
+.features-container{
+    display: flex;
+    max-width: 1240px;
+    align-items: center;
+    margin: 100px auto;
+    gap: 100px;
+}
+.feature-title-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.line{
+    border-left: 5px solid #FF900E;
+    height: 3rem;
+}
+.feature-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #131313;
+}
+.feature-info{
+    gap: 100px;
+}
+.block{
+    padding: 30px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    border-radius: 5px;
+}
+.feature-img{
+    width: 100vh;
+    /* height: 100%; */
+}
+.btn2{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 30px;
+    border-radius: 5px;
+    border: none;
+    margin: -100px 0px 0px -50px;
+}
+.btn2-1st-line{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.btn2-2nd-line{
+    font-size: 1rem;
+    font-weight: 400;
+}
+@media screen and (max-width:576px) {
+    .features-container{
+        flex-direction: column-reverse;
+    }
+    .feature-img{
+    width: 50vh;
+    margin: 0 50px;
+    }
+    .btn2{
+        margin: -100px 0px 0px 50px;
     }
 }
