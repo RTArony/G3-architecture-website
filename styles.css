@@ -22,6 +22,19 @@
     color: #FF900E;
 }
 
+.btn{
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    font-weight: 600;
+    font-size: 1.25rem;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 50px 0;
+
+}
+
+
 /* header style */
 
 /* navbar style */
@@ -71,16 +84,6 @@ nav ul li{
     font-weight: 400;
     font-size: 1rem;
 }
-.btn{
-    background-color: rgba(255, 144, 14, 1);
-    color: white;
-    font-weight: 600;
-    font-size: 1.25rem;
-    padding: 20px;
-    border-radius: 5px;
-    border: none;
-    margin: 50px 0;
-}
 .banner-img-container{
     max-width: 1140px;
     margin: 0 auto;
@@ -106,6 +109,7 @@ nav ul li{
 .team-img{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 40px;
 }
 .team-info{
     align-content: center;
@@ -117,4 +121,18 @@ nav ul li{
 .team-description{
     font-size: 1rem;
     color: #727272;
+}
+
+@media screen and (max-width: 576px) {
+    .team-container{
+        flex-direction: column;
+    }
+    .team-img{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (min-width:576px) and (max-width:990px) {
+    .team-container{
+        flex-direction: column;
+    }
 }
