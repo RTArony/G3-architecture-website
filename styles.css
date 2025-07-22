@@ -199,3 +199,38 @@ nav ul li{
         margin: -100px 0px 0px 50px;
     }
 }
+
+/* facts style */
+.facts-container{
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.facts-title{
+    font-size: 2rem;
+    color: #131313;
+}
+.facts-description{
+    max-width: 620px;
+    font-size: 1rem;
+    color: #727272;
+}
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0;
+}
+.card{
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #FF900E;
+    width: 200px;
+    height: 150px;
+}
+@media screen and (max-width:576px) {
+    .facts-card-container{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* sponsor style */
